@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: inherit;
+  font-family: "Poppins", sans-serif;
+}
+/* Responsive Navigation bar */
+nav {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 0px 3px 3px #ccc;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.container__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__title p {
+  letter-spacing: 2px;
+}
+.main__title p::first-letter {
+  font-size: 1.5rem;
+}
+.main-nav__lists .main-nav__list {
+  display: inline-block;
+  margin: 0 0.8rem;
+  letter-spacing: 3px;
+}
+.main-nav__list a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+/* Full screen background image */
+header {
+  height: inherit;
+}
+header .bg-image {
+  /* setting the image */
+  background-image: url("./images/architect.jpg");
+  /* full height */
+  height: 100%;
+  /* centering and scaling the image nicely */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.image__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  letter-spacing: 3px;
+}
+.image__text p {
+  font-size: 1.5rem;
+}
+.image__text p span {
+  font-size: 2rem;
+  padding: 0.8rem;
+  background-color: #000;
+  color: white;
+}
+/* sections */
+main {
+  margin-top: 3rem;
+  width: 100%;
+}
+/* section A */
+section {
+  width: 100%;
+  margin: 1rem 0rem;
+}
+main h1 {
+  width: 95%;
+  margin: auto;
+  letter-spacing: 2px;
+}
+.hr__line {
+  border: none;
+  border: 1px solid #f0f0f0;
+  width: 95%;
+  margin: 1.5rem auto;
+}
+.container__projects {
+  width: 95%;
+  margin: 0.8rem auto;
+  display: grid;
+  grid-template-rows: repeat(2, minmax(100px, auto));
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+.project,
+img {
+  width: 100%;
+}
+.project {
+  position: relative;
+}
+.summer-house_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.summer-house_text p {
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 2px;
+  padding: 0.5rem;
+}
+/* section A ends */
+/* Section B starts */
+.section-b p,
+.section-c p {
+  width: 95%;
+  margin: auto;
+}
+.container__users {
+  width: 95%;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.user {
+  width: 24%;
+  margin: auto;
+}
+.user__info {
+  text-align: left;
+}
+.user__info .user-name {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+}
+.user__info .user-designation {
+  font-family: Verdana, sans-serif;
+  line-height: 3;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin: 0;
+}
+.user__info .user-description {
+  margin: 0;
+}
+.user__info .user-btn {
+  width: 100%;
+  padding: 0.4rem 0;
+  margin: 0.6rem 0;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.user__info .user-btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+/* Section B ends */
+/* Section c starts */
+.container__form {
+  width: 100%;
+}
+form {
+  width: 95%;
+  margin: auto;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  margin: 0.6rem 0;
+  padding: 0.5rem 1rem;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid #000;
+}
+.section-c button {
+  color: #fff;
+  background-color: #000;
+  outline: none;
+  padding: 0.5rem 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: none;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.section-c button:hover {
+  color: #000;
+  background-color: #ccc;
+}
+/* Section c ends */
+/* Section D starts */
+.section-d {
+  width: 100%;
+}
+.container__map {
+  width: 95%;
+  margin: 0.8rem auto;
+}
+.container__map img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+/* Section D ends */
+/* Footer starts */
+footer,
+.container__footer {
+  width: 100%;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+}
+.container__footer {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .summer-house_text p {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .container__nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .summer-house_text p {
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 0.5rem;
+  }
+  .main__title p,
+  .main-nav__list a {
+    font-size: 0.8rem;
+  }
+  .image__text p {
+    font-size: 0.8rem;
+  }
+  .image__text p span {
+    font-size: 1rem;
+  }
+  main h1 {
+    font-size: 0.8rem;
+  }
+  .container__projects {
+    display: block;
+    width: 100%;
+  }
+  .project {
+    width: 80%;
+    margin: auto;
+  }
+  .container__users {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .user {
+    width: 80%;
+    margin: 0.8rem auto;
+  }
+}
